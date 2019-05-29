@@ -1,0 +1,1 @@
+# querybean-generator
