@@ -5,8 +5,6 @@ import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.Parameter;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import io.ebean.typequery.generator.Generator;
 import io.ebean.typequery.generator.GeneratorConfig;
@@ -17,8 +15,6 @@ import io.ebean.typequery.generator.GeneratorConfig;
  */
 @Mojo(name="generate", defaultPhase=LifecyclePhase.COMPILE )
 public class GenerateMojo extends AbstractMojo {
-	
-	private static final Logger log = LoggerFactory.getLogger(GenerateMojo.class);
 	
 	@Parameter(property="entityBeanPackage", required=true )
     private String entityBeanPackage;
